@@ -3,9 +3,6 @@ import * as test from 'tape';
 type Coordinate = 0 | 1 | 2;
 
 class Game {
-    isOpen() {
-        return true;
-    }
     makeMove(line: Coordinate, column:Coordinate) {
 
     }
@@ -13,12 +10,6 @@ class Game {
 
 test('Create a new game', (t: test.Test) => {
     new Game();
-    t.end();
-});
-
-test('A new game is always open', (t: test.Test) => {
-    const game = new Game();
-    t.equal(game.isOpen(), true);
     t.end();
 });
 
